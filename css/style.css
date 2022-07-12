@@ -97,17 +97,17 @@ nav {
   gap: 16px;
 }
 
-.hero-img-wrapper {
-  flex: 1 1 0;
-}
-
 .hero-img {
-  width: 500px;
+  flex: auto;
+  max-width: 500px;
 }
 
 .hero-content {
-  flex: 1 1 0;
-  /*width: 100px;*/
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
   color: white;
 }
 
@@ -127,6 +127,12 @@ nav {
   color: white;
   padding: 8px 25px;
   border-radius: 5px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.hero-content .btn-sign-up:active {
+  transform: scale(.95);
 }
 
 .img-wrapper {
@@ -195,7 +201,7 @@ section.information-wrapper {
 /* call to action */
 .call-to-action-wrapper {
   margin: auto;
-  padding: 64px 64px;
+  padding: 80px;
   max-width: 1000px;
 }
 
@@ -203,7 +209,7 @@ section.information-wrapper {
   color: white;
   flex: 1;
   margin: auto;
-  padding: 32px 128px;
+  padding: 32px 64px;
   border-radius: 10px;
   background-color: #3882f6;
   display: flex;
