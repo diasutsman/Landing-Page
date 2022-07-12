@@ -135,7 +135,7 @@ nav {
 
 /* information */
 section.information-wrapper {
-  padding: 64px;
+  padding: 128px;
 }
 
 .information-header {
@@ -161,4 +161,33 @@ section.information-wrapper {
   border: solid #3882f6 4px;
   border-radius: 10%;
   margin-bottom: 8px;
+}
+
+/* quotes */
+.quotes-wrapper {
+  background-color: #E5E7EB;
+  color: #1f2937;
+  padding: 128px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.quotes {
+  max-width: 800px;
+  margin: auto;
+}
+
+.quotes p.quotes {
+  font-size: 36px;
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-style: italic;
+}
+
+.quotes .quotee {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 16px;
+  text-align: right;
 }
